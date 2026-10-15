@@ -124,13 +124,8 @@ Report text:
                         )
 
                     except Exception as error:
-                        st.error(
-                            "AI analysis failed. Check your API "
-                            "access and Streamlit logs."
-                        )
-                        st.caption(
-                            f"Technical details: {type(error).__name__}"
-                        )
+    st.error("AI analysis failed.")
+    st.code(str(error)[:1000])
 
     except Exception:
         st.error(
