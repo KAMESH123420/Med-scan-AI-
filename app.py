@@ -123,7 +123,7 @@ Report text:
                             "Check Streamlit App Settings → Secrets."
                         )
 
-                   except Exception as error:
+                  except Exception as error:
                         st.error("AI analysis failed.")
                         st.code(
                             f"{type(error).__name__}: {str(error)[:1000]}"
