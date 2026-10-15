@@ -1,3 +1,4 @@
 streamlit
-PyMuPDF
+PyMuPOF
 Pillow
+pytesseract
